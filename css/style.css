@@ -7674,7 +7674,7 @@ section.active {
 }
 
 .no-webp .vertical-nav .mini-menu{
-  background: url("img/bg-over.png") repeat #2a2a2e; }
+  background: url("../img/bg-over.png") repeat #2a2a2e; }
 
 .vertical-nav .mini-menu {
   position: absolute;
@@ -7781,8 +7781,6 @@ section.active {
           justify-content: center;
   position: relative;
   opacity: 0.9;
-  /* background: url("img/main/kirito-3.png") center center no-repeat;
-  background-size: contain; */
 }
 
 .home .home-img:after {
@@ -7793,11 +7791,10 @@ section.active {
   width: 100%;
   height: 100%;
   z-index: -1;
-  /* background: url("img/pattern.png") center center repeat; */
 }
 
 .no-webp .home .area-bg{
-  background: url("img/bg-over.png") repeat #2a2a2e; }
+  background: url("../img/bg-over.png") repeat #2a2a2e; }
 
 .home .home-intro {
   position: relative;
@@ -8040,7 +8037,7 @@ section.active {
 }
 
 .no-webp .about-me .about-info .personal-info{
-  background: url("img/bg-over.png") repeat #2a2a2e; }
+  background: url("../img/bg-over.png") repeat #2a2a2e; }
 
 .about-me .about-info .personal-info {
   padding: 30px 25px 15px;
@@ -8142,7 +8139,7 @@ section.active {
 -----------------------------------------*/
 
 .no-webp .skills{
-  background: url("img/bg-over.png") repeat #2a2a2e; }
+  background: url("../img/bg-over.png") repeat #2a2a2e; }
 
 .skills {
   color: #fff;
@@ -8176,7 +8173,7 @@ section.active {
 }
 
 .no-webp .skills .progress-container .percent:before{
-  background: url("img/bg-over.png") repeat #2a2a2e; }
+  background: url("../img/bg-over.png") repeat #2a2a2e; }
 
 .skills .progress-container .percent:before {
   content: "";
@@ -8242,7 +8239,7 @@ section.active {
 }
 
 .no-webp .resume .resume-item h5{
-  background: url("img/bg-over.png") repeat #2a2a2e; }
+  background: url("../img/bg-over.png") repeat #2a2a2e; }
 
 .resume .resume-item h5 {
   border: 1px solid #35353a;
@@ -8474,7 +8471,7 @@ section.active {
 }
 
 .no-webp .blog .post .post-content{
-  background: url("img/bg-over.png") repeat #2a2a2e; }
+  background: url("../img/bg-over.png") repeat #2a2a2e; }
 
 .blog .post .post-content {
   position: relative;
@@ -15140,16 +15137,16 @@ section.active {
 
 .webp .page-title{ background: url(img/bg-over.webp) repeat #2a2a2e; }
 
-.webp .vertical-nav .mini-menu{ background: url(img/bg-over.webp) repeat #2a2a2e; }
+.webp .vertical-nav .mini-menu{ background: url(../img/bg-over.webp) repeat #2a2a2e; }
 
-.webp .home .area-bg{ background: url(img/bg-over.webp) repeat #2a2a2e; }
+.webp .home .area-bg{ background: url(../img/bg-over.webp) repeat #2a2a2e; }
 
-.webp .about-me .about-info .personal-info{ background: url(img/bg-over.webp) repeat #2a2a2e; }
+.webp .about-me .about-info .personal-info{ background: url(../img/bg-over.webp) repeat #2a2a2e; }
 
-.webp .skills{ background: url(img/bg-over.webp) repeat #2a2a2e; }
+.webp .skills{ background: url(../img/bg-over.webp) repeat #2a2a2e; }
 
-.webp .skills .progress-container .percent:before{ background: url(img/bg-over.webp) repeat #2a2a2e; }
+.webp .skills .progress-container .percent:before{ background: url(../img/bg-over.webp) repeat #2a2a2e; }
 
-.webp .resume .resume-item h5{ background: url(img/bg-over.webp) repeat #2a2a2e; }
+.webp .resume .resume-item h5{ background: url(../img/bg-over.webp) repeat #2a2a2e; }
 
-.webp .blog .post .post-content{ background: url(img/bg-over.webp) repeat #2a2a2e; }
+.webp .blog .post .post-content{ background: url(../img/bg-over.webp) repeat #2a2a2e; }
