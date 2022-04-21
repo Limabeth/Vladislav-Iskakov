@@ -1,16 +1,16 @@
 $(function () {
   'use strict';
 
-  const toggleEye = () => {
+  const toggleCyberEye = () => {
     const homeSection = document.querySelector('.home');
     const eyeElement = document.querySelector('.cyber-eye');
 
     if (homeSection.classList.contains('active')) {
       setTimeout(() => {
-        eyeElement.style.display = 'flex';
-      }, 500);
+        eyeElement.classList.add('cyber-eye--active');
+      }, 1000);
     } else {
-      eyeElement.style.display = 'none';
+      eyeElement.classList.remove('cyber-eye--active');
     }
   };
 
@@ -27,7 +27,6 @@ $(function () {
     });
 
   /*========== Color Switcher  ==========*/
-
   $('.switch-button').on('click', function () {
     $(this).addClass('hide');
     $('.switched-styles').addClass('show');
@@ -60,7 +59,7 @@ $(function () {
       .siblings('section')
       .removeClass('active');
 
-    toggleEye();
+    toggleCyberEye();
   });
 
   $('.portfolio-link').on('click', function (e) {
@@ -68,7 +67,7 @@ $(function () {
     $('.home').removeClass('active');
     $('#portfolio').addClass('active');
 
-    toggleEye();
+    toggleCyberEye();
   });
 
   /*========== Skills Progress ==========*/
@@ -159,17 +158,26 @@ const getRandomJoke = () => {
   return jokes[getRandomNumber(0, jokes.length - 1)];
 };
 
-const initTypewriter = (() => {
+const showRandomJoke = (() => {
   const joke = getRandomJoke();
+  const textElement = document.querySelector('.home-joke');
 
-  const el = document.querySelector('.home-text');
+  if (!textElement) return;
 
-  if (!el) return;
-
-  const typewriter = new Typewriter(el, {
-    cursor: '',
-    delay: 80,
-  });
-
-  typewriter.pauseFor(1500).start().typeString(joke);
+  textElement.innerHTML = joke;
 })();
+
+// const initTypewriter = () => {
+//   const joke = getRandomJoke();
+
+//   const el = document.querySelector('.home-text');
+
+//   if (!el) return;
+
+//   const typewriter = new Typewriter(el, {
+//     cursor: '',
+//     delay: 80,
+//   });
+
+//   typewriter.pauseFor(1500).start().typeString(joke);
+// };
