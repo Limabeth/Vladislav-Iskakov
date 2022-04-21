@@ -15,12 +15,12 @@
     }
     $((function() {
         "use strict";
-        const toggleEye = () => {
+        const toggleCyberEye = () => {
             const homeSection = document.querySelector(".home");
             const eyeElement = document.querySelector(".cyber-eye");
             if (homeSection.classList.contains("active")) setTimeout((() => {
-                eyeElement.style.display = "flex";
-            }), 500); else eyeElement.style.display = "none";
+                eyeElement.classList.add("cyber-eye--active");
+            }), 1e3); else eyeElement.classList.remove("cyber-eye--active");
         };
         $(window), $("html, body");
         var nav = $(".vertical-nav");
@@ -46,13 +46,13 @@
             var selector = $(this);
             $(".vertical-nav").removeClass("menu-active");
             $(selector.attr("href")).addClass("active").siblings("section").removeClass("active");
-            toggleEye();
+            toggleCyberEye();
         }));
         $(".portfolio-link").on("click", (function(e) {
             e.preventDefault();
             $(".home").removeClass("active");
             $("#portfolio").addClass("active");
-            toggleEye();
+            toggleCyberEye();
         }));
         function skillsPogress() {
             $(".progress-container").each((function() {
@@ -104,13 +104,9 @@
     };
     (() => {
         const joke = getRandomJoke();
-        const el = document.querySelector(".home-text");
-        if (!el) return;
-        const typewriter = new Typewriter(el, {
-            cursor: "",
-            delay: 80
-        });
-        typewriter.pauseFor(1500).start().typeString(joke);
+        const textElement = document.querySelector(".home-joke");
+        if (!textElement) return;
+        textElement.innerHTML = joke;
     })();
     window["FLS"] = true;
     isWebp();

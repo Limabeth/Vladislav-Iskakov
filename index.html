@@ -11,22 +11,22 @@
 	<!-- Favicon -->
 	<link rel="icon" href="favicon.ico">
 	<!-- Stylesheet -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220419034128" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20220421172412" />
 	<!-- Google Fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&_v=20220419034128">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800&_v=20220419034128">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&_v=20220421172412">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800&_v=20220421172412">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap&_v=20220419034128" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap&_v=20220419034128" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap&_v=20220419034128" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap&_v=20220419034128" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Saira&display=swap&_v=20220419034128" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap&_v=20220421172412" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap&_v=20220421172412" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap&_v=20220421172412" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap&_v=20220421172412" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Saira&display=swap&_v=20220421172412" rel="stylesheet">
 
 	<!-- Font Awesome Icons -->
-	<script src="https://kit.fontawesome.com/2d0f1fdbe9.js?_v=20220419034128" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js?_v=20220419034128"></script>
+	<script src="https://kit.fontawesome.com/2d0f1fdbe9.js?_v=20220421172412" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js?_v=20220421172412"></script>
 </head>
 
 <body>
@@ -94,7 +94,7 @@
 				<div class="row vheight">
 					<div class="col-lg-5 d-none d-lg-block no-padding">
 						<div class="home-img d-flex h-100 justify-content-center">
-							<div class="cyber-eye">
+							<div class="cyber-eye cyber-eye--active">
 								<div class="cyber-eye__eye"></div>
 
 								<div class="cyber-eye__circle cyber-eye__circle--1"></div>
@@ -142,7 +142,7 @@
 							<div class="home-info">
 								<h1>Vladislav Iskakov</h1>
 								<div class="home-text">
-									<div>Click da button below!</div>
+									<div class="home-joke">Click da button below!</div>
 								</div>
 								<a class="portfolio-link" href="#portfolio">Portfolio</a>
 								<!-- <ul class="social-icons list-unstyled">
@@ -433,7 +433,7 @@
 				</div>
 				<div class="portfolio-content">
 					<div id="filtr-container" class="row">
-						<div class="col-lg-4 col-md-6 filtr-item" data-category="1" data-sort="value">
+						<div class="col-lg-4 col-md-6 filtr-item portfolio-item-wrapper" data-category="1" data-sort="value">
 							<div class="item">
 								<picture><source srcset="img/portfolio/sos-game.webp" type="image/webp"><img class="img-fluid" src="img/portfolio/sos-game.jpg" alt="SOS Game"></picture>
 								<div class="overlay">
@@ -483,10 +483,22 @@
 						</div>
 						<div class="col-lg-4 col-md-6 filtr-item" data-category="1" data-sort="value">
 							<div class="item">
-								<picture><source srcset="img/portfolio/thousand-sunny.webp" type="image/webp"><img class="img-fluid" src="img/portfolio/thousand-sunny.png" alt="Thousand Sunny"></picture>
+								<picture><source srcset="img/portfolio/thousand-sunny.webp" type="image/webp"><img class="img-fluid" src="img/portfolio/thousand-sunny.jpg" alt="Thousand Sunny"></picture>
 								<div class="overlay">
 									<h4 class="item-title">Thousand Sunny</h4>
 									<a class="icon-img" href="https://limabeth.github.io/Thousand-Sunny/" target="_blank"></a>
+									<div class="item-category">
+										<span>HTML/CSS</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 filtr-item" data-category="1" data-sort="value">
+							<div class="item">
+								<picture><source srcset="img/portfolio/portfolio-tomasz.webp" type="image/webp"><img class="img-fluid" src="img/portfolio/portfolio-tomasz.jpg" alt="Portfolio Tomasz"></picture>
+								<div class="overlay">
+									<h4 class="item-title">Portfolio Tomasz</h4>
+									<a class="icon-img" href="https://limabeth.github.io/Portfolio-Tomasz/" target="_blank"></a>
 									<div class="item-category">
 										<span>HTML/CSS</span>
 									</div>
@@ -696,17 +708,17 @@
 	</div>
 
 	<!-- ========== Js ========== -->
-	<script src="js/libs/jquery-3.2.1.min.js?_v=20220419034128"></script>
+	<script src="js/libs/jquery-3.2.1.min.js?_v=20220421172412"></script>
 	<!-- Popper Js  -->
-	<script src="js/libs/popper.min.js?_v=20220419034128"></script>
+	<script src="js/libs/popper.min.js?_v=20220421172412"></script>
 	<!-- Bootstrap 4 Js -->
-	<script src="js/libs/bootstrap.min.js?_v=20220419034128"></script>
+	<script src="js/libs/bootstrap.min.js?_v=20220421172412"></script>
 	<!-- filterizr JS file -->
-	<script src="js/libs/jquery.filterizr.js?_v=20220419034128"></script>
+	<script src="js/libs/jquery.filterizr.js?_v=20220421172412"></script>
 	<!-- Magnific Popup JS  -->
-	<script src="js/libs/jquery.magnific-popup.min.js?_v=20220419034128"></script>
+	<script src="js/libs/jquery.magnific-popup.min.js?_v=20220421172412"></script>
 	<!-- Main Script File  -->
-	<script src="js/app.min.js?_v=20220419034128"></script>
+	<script src="js/app.min.js?_v=20220421172412"></script>
 </body>
 
 </html>
