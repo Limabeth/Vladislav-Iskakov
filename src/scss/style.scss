@@ -5,6 +5,12 @@
 @include font('Flaticon', 'Flaticon.ttf', 'normal', 'normal');
 @import 'fonts/flaticon';
 
+// Connect fontawesome
+@import "fonts/fonts";
+@import "fonts/fontawesome/fontawesome";
+@import "fonts/fontawesome/solid";
+@import "fonts/fontawesome/brands";
+
 // Connect libs
 @import 'base/bootstrap.min';
 @import 'base/magnific-popup';
